@@ -18,10 +18,11 @@ dependencies {
 
 intellij {
     pluginName.set('plantuml-parser')
-    version.set('2020.1')
+    version.set('2022.3')
     type.set('IU')
     downloadSources = false
     updateSinceUntilBuild = false
+    buildSearchableOptions.enabled(false)
     plugins.set(['org.jetbrains.kotlin'])
 }
 
