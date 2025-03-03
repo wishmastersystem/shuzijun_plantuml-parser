@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.6.5'
+    id 'org.jetbrains.intellij' version '1.13.3'
 }
 
 group 'com.shuzijun'
@@ -17,13 +17,13 @@ dependencies {
 }
 
 intellij {
-    pluginName 'plantuml-parser'
-    version '2020.1'
-    type 'IU'
-    downloadSources false
-    updateSinceUntilBuild false
+    pluginName.set('plantuml-parser')
+    version.set('2022.3')
+    type.set('IU')
+    downloadSources = false
+    updateSinceUntilBuild = false
     buildSearchableOptions.enabled(false)
-    plugins ['org.jetbrains.kotlin']
+    plugins.set(['org.jetbrains.kotlin'])
 }
 
 tasks.withType(JavaCompile) {
